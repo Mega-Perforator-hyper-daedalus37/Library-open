@@ -1,0 +1,236 @@
+@import 'normalize.css';
+@font-face {
+    font-family: Inter-Regular;
+    src: url("/library/assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: Forum-Regular;
+    src: url("/library/assets/fonts/Forum-Regular.ttf");
+}
+body{
+    margin: 0 auto;
+}
+p,h1,h2,h3,h4,h5,h6,li,ul{
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #000;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+button{
+    padding: 0;
+}
+main{
+    color: #000000;
+    font-family: Inter-Regular;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-color: #0C0C0E;
+    padding: 20px;
+}
+.header-name{
+    font-family: Forum-Regular;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px; 
+    letter-spacing: 0.6px;
+    color: #FFF;
+}
+.header-nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.header-list{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.header-list-element{
+    color: #FFF;
+}
+.header-list-element:hover{
+    cursor: pointer;
+    color: #FFF;
+}
+.profile-icon{
+    width: 28px;
+    height: 28px;
+}
+.welcome{
+    background-image: url(/library/assets/img/library.webp);
+    background-size: cover;
+    background-position: 0;
+}
+.box-welcome-bg{
+    padding: 220px 0 160px 0;
+    max-width: 600px;
+}
+.box-welcome-inner{
+    background-color: #0C0C0E;
+    display: flex;
+    max-width: 600px;
+    padding: 35px 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+.welcome-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Forum-Regular;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px; 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    max-width: 520px;
+    flex-shrink: 0;
+}
+.section-title{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+}
+.section-title-text{
+    color: #0C0C0E;
+    font-family: Forum-Regular;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.section-line{
+    width: 50px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #0C0C0E;
+}
+.about-text{
+    padding: 40px 0 20px 0;
+    text-align: center;
+    line-height: 40px;
+}
+.images-items{
+    max-height: 560px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 auto;
+}
+.carousel-pagination{
+    margin: 0 auto;
+    display: flex;
+    padding: 40px 0;
+}
+.carousel-item:hover{
+    cursor: pointer;
+}
+.favorites-container{
+    padding: 0 20px;
+}
+.favorites-text{
+    font-weight: 700;
+    padding: 40px 0;
+}
+.seasons{
+    display: flex;
+    gap: 90px;
+}
+.season{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.season-selected{
+    font-weight: 700;
+}
+.favorites-items{
+    padding: 40px 0;
+    display: flex;
+    gap: 260px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+}
+.book{
+    position: relative;
+    padding: 15px 20px;
+    border: 1px solid #000;
+    max-width: 510px;
+    min-height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-book{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.book-title-text{
+    font-size: 20px;
+    line-height: 40px;
+    color: #000;
+}
+.book-line{
+    width: 60px;
+    height: 1px;
+    background: #BB945F;
+}
+.book-text{
+    font-family: Inter-Regular;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.book-name{
+    font-weight: 700;
+}
+.book-description{
+    max-width: 355px;
+}
+.book-button{
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+.book-button-text{
+    text-align: center;
+    font-family: Inter-Regular;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    padding: 8.2px 27px;
+}
+.book-img{
+    position: absolute;
+    bottom: 0;
+    right: -40px;
+}
