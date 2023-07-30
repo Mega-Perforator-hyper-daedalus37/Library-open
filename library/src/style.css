@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: Inter-Regular;
-    src: url("/library/assets/fonts/Inter-Regular.ttf");
+    src: url("../assets/fonts/Inter-Regular.ttf");
 }
 
 @font-face {
     font-family: Forum-Regular;
-    src: url("/library/assets/fonts/Forum-Regular.ttf");
+    src: url("../assets/fonts/Forum-Regular.ttf");
 }
 
 body {
@@ -34,7 +34,9 @@ ul {
     font-weight: 400;
     line-height: 24px;
 }
-
+ul, li{
+    list-style: none;
+}
 a {
     text-decoration: none;
     color: #FFF;
@@ -116,7 +118,7 @@ footer {
 }
 
 .welcome {
-    background-image: url(/library/assets/img/library.webp);
+    background-image: url(../assets/img/library.webp);
     background-size: cover;
     background-position: 0;
     position: relative;
