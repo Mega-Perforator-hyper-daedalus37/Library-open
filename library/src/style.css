@@ -340,6 +340,13 @@ footer {
     align-self: flex-start;
     background-color: #FFF;
     transition: 1000ms;
+    padding: 8.2px 27px;
+    text-align: center;
+    font-family: Inter-Regular;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
 }
 .book-button:not(.book-button:disabled):hover {
     transition: 1000ms;
@@ -350,26 +357,13 @@ footer {
 .book-button-own {
     border: 1px solid #BB945F;
     cursor:unset;
-}
-
-.book-button-text {
-    text-align: center;
-    font-family: Inter-Regular;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    padding: 8.2px 27px;
+    color: #BB945F;
 }
 
 .book-img {
     position: absolute;
     bottom: -1px;
     right: -40px;
-}
-
-.book-button-text-own {
-    color: #BB945F;
 }
 
 .coffee-shop-lists {
