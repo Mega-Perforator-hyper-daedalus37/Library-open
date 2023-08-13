@@ -27,8 +27,20 @@
                     </ul>
                 </nav>
                 <img class="profile-icon" src="../assets/img/icon_profile.svg" alt="icon_profile">
+                <button class="header-burger">
+                    <div class="header-burger-item"></div>
+                </button>
             </div>
         </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-list">
+                <li class="header-about header-list-element"><a href="#about">About</a></li>
+                <li class="header-Favorites header-list-element"><a href="#favorites">Favorites</a></li>
+                <li class="header-Coffee-shop header-list-element"><a href="#coffee-shop">Coffee shop</a></li>
+                <li class="header-Contacts header-list-element"><a href="#our-contacts">Contacts</a></li>
+                <li class="header-Library-Card header-list-element"><a href="#digital-library-cards">Library Card</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="welcome">
@@ -49,15 +61,27 @@
                 </div>
                 <p class="section-text">The Brooklyn Library is a free workspace, a large number of books and a cozy
                     coffee shop inside </p>
-                <div class="images-items">
-                    <img src="../assets/img/image-1.png" alt="image1">
-                    <img src="../assets/img/image-2.png" alt="image2">
-                    <img src="../assets/img/image-3.png" alt="image3">
-                </div>
-                <div class="carousel-pagination">
-                    <div class="carousel-item-zone"><button class="carousel-item carousel-item-active"></button></div>
-                    <div class="carousel-item-zone"><button class="carousel-item"></button></div>
-                    <div class="carousel-item-zone"><button class="carousel-item"></button></div>
+                <div class="images-selector">
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path d="M15 7.5L9 12.5L15 17.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="carousel-slider">
+                        <div class="images-items">
+                            <img id="about-img-1" src="../assets/img/image-1.png" alt="image1">
+                            <img id="about-img-2" src="../assets/img/image-2.png" alt="image2">
+                            <img id="about-img-3" src="../assets/img/image-3.png" alt="image3">
+                        </div>
+                        <div class="carousel-pagination">
+                            <div class="carousel-item-zone"><button class="carousel-item carousel-item-active"></button></div>
+                            <div class="carousel-item-zone"><button class="carousel-item"></button></div>
+                            <div class="carousel-item-zone"><button class="carousel-item"></button></div>
+                            <div class="carousel-item-zone"><button class="carousel-item carousel-item-mobile"></button></div>
+                            <div class="carousel-item-zone"><button class="carousel-item carousel-item-mobile"></button></div>
+                        </div>
+                    </div>
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path d="M9 17.5L15 12.5L9 7.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
             </div>
         </section>
@@ -88,7 +112,7 @@
                 </div>
                 <div class="favorites-items"></div>
             </div>
-        </section>
+        <!-- </section>
         <section class="coffee-shop">
             <div class="container">
                 <div class="section-title">
@@ -227,8 +251,8 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
+    </main> -->
+    <!-- <footer>
         <div class="container">
             <div class="footer-sections">
                 <section class="footer-section">
@@ -265,11 +289,11 @@
             <div class="footer-line"></div>
             <div class="footer-rss">
                 <h3 class="footer-rss-item">2023</h3>
-                <a class="footer-rss-item rs-school" href="https://rs.school/js-stage0">The Rolling Scopes School</a>
-                <a class="footer-rss-item" href="https://github.com/Mega-Perforator-hyper-daedalus37" >Mega-Perforator-hyper-daedalus37</a>
+                <a class="footer-rss-item" href="https://rs.school/js-stage0">The Rolling Scopes School</a>
+                <a class="footer-rss-item" href="https://github.com/Mega-Perforator-hyper-daedalus37" >Github</a>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="index.js"></script>
 </body>
 

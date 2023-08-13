@@ -5,11 +5,29 @@ document.querySelectorAll('.header-list-element').forEach(anchor => {
         event.preventDefault();
         const targetSection = document.querySelector(event.target.getAttribute('href'));
         
+        onBurger();
+
         targetSection.scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
+
+const burger_button = document.querySelector('.header-burger');
+const mobile_menu = document.querySelector('.mobile-nav');
+const header_name = document.querySelector('.header-name');
+const header = document.querySelector('header');
+
+function onBurger() {
+    document.body.classList.toggle('not-scroll');
+    burger_button.classList.toggle('is-active');
+    mobile_menu.classList.toggle('is-active');
+    header_name.classList.toggle('is-active');
+}
+
+burger_button.addEventListener("click", function() {
+    onBurger();
+})
 
 function createElement({tag, elementClass, text, img, altImg, parent}) {
     const element = document.createElement(tag);
