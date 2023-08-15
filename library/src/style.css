@@ -448,6 +448,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .coffee-shop-text {
@@ -748,9 +749,12 @@ footer {
         max-width:none;
     }
 }
-@media screen and (max-width: 1183px) {
+@media screen and (max-width: 1220px) {
     .books-tab{
         justify-content: center;
+    }
+    .book{
+        margin-right: 40px;
     }
 }
 
@@ -782,7 +786,37 @@ footer {
     #about-img-2{
         display: none;
     }
-    .carousel-pagination{
-        padding: 20px 0 0 0;
+    .favorites-items {
+        padding: 29px 40px 40px 0;
+    }
+    .coffee-shop-lists{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .coffee-shop-menu:last-child{
+        align-self: flex-end;
+    }
+    .contacts-info{
+        flex-wrap: wrap;
+        row-gap: 100px;
+    }
+    .card{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .get-a-card-header{
+        align-self: center;
+    }
+    .get-a-card-text{
+        text-align: center;
+    }
+    .get-a-card-buttons{
+        align-self: center;
+    }
+}
+@media screen and (max-width: 750px) {
+    .seasons{
+        gap: 50px;
     }
 }

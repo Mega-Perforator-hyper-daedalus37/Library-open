@@ -4,8 +4,9 @@ document.querySelectorAll('.header-list-element').forEach(anchor => {
     anchor.addEventListener('click', (event) => {
         event.preventDefault();
         const targetSection = document.querySelector(event.target.getAttribute('href'));
-        
-        onBurger();
+        if (window.innerWidth<1024) {
+            onBurger();
+        }
 
         targetSection.scrollIntoView({
             behavior: 'smooth'
@@ -149,4 +150,3 @@ function createAutumnBooks() {
 }
 
 createWinterBooks();
-alert('Will finish yesterday)');
